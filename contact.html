@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=".images/logo/favicon-16x16.png">
+    <link rel="manifest" href="./images/logo/site.webmanifest">
+
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+
+    <!-- Lni CDN -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <!--  -->
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/about.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>SahilVerse - A personal portfolio</title>
+
+    <!-- Primary Meta tags -->
+    <meta name="title" content="Contact me - Sahil Dahal">
+    <meta name="description" content="Contact to work together">
+
+</head>
+
+<body>
+    <!-- Navigation Bar starts -->
+    <nav class="container navig">
+
+        <div class="navbar">
+
+            <div class="logo">
+                <h1 id="logo"><a href="index.html">SahilVerse.</a></h1>
+            </div>
+
+            <div class="navigation-bar">
+                <button id="open" class="btn" onclick="openNav()"><i class="lni lni-menu"></i></button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link active">Contact</a></li>
+                    <button id="close" class="btn btn-cross" onclick="closeNav()"><i
+                            class="lni lni-cross-circle"></i></button>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+    <!-- Navigation bar ends -->
+
+    <!-- Contact Section Starts -->
+    <section id="contact">
+        <div class="container">
+            <div class="cols">
+                <div class="col content-col">
+                    <div class="lets-talk">
+                        <h2>Let's Talk</h2>
+                        <p>Do you have some big ideas and need help bringing them to fruition for your business? Then
+                            please
+                            reach out, we would love to hear more about you, your project and how we can help!</p>
+                    </div>
+
+                    <div class="mail">
+                        <h2>Email</h2>
+                        <a href="mailto:denenme49@gmail.com"><i class="lni lni-envelope"></i>
+                            <span>denenme49@gmail.com</span>
+                    </div>
+
+                    <div class="media">
+                        <h2>Social Media</h2>
+                        <div class="contact-social-links">
+                            <a href="https://www.facebook.com/s4hilofficial/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/sahil__dahal/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="https://github.com/Sa-H-il" target="_blank">
+                                <i class="fa-brands fa-github "></i>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col form-col">
+                    <h2>Send me a message</h2>
+                    <!-- Form Begins -->
+                    <form action="#" name="contactForm" onsubmit="return submitForm()">
+                        <div class="cols">
+                            <div class="col right">
+                                <div class="input">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" name="fname">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" name="lname">
+                                </div>
+                            </div>
+                            <div class="col right">
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" name="phone">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input">
+                                    <label for="message">Message</label>
+                                    <textarea name="message"  rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-form">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <!-- Form ends -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- javaScript -->
+    <script src="./Js/script.js"></script>
+    <script src="./Js/validate.js"></script>
+
+</body>
+
+</html>

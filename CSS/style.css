@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+/* Custom properties/variables*/
+:root {
+    --primary-color1: #635985;
+    --primary-color2: #ACFADF;
+    --secondary-color1: #94ADD7;
+    --secondary-color2: #E8FFCE;
+    --text-color: rgb(126 34 206);
+    --text-color2: #02febfb6;
+}
+
+::selection{
+    background-color: var(--secondary-color2);
+    color: var(--primary-color1);
+}
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font-size */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+}
+
+body {
+    background-color: var(--primary-color1);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Navigation Bar styling */
+
+.container {
+    width: 100%;
+    padding: auto 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+
+}
+
+#logo {
+    font-size: 2.4rem;
+
+}
+
+#logo a {
+    text-decoration: none;
+    color: var(--secondary-color2);
+
+}
+
+
+.nav-list {
+    display: flex;
+
+
+
+}
+
+.nav-list li {
+    list-style: none;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 0.06rem;
+    color: white;
+    margin-left: 1.8rem;
+
+}
+
+.btn {
+    display: none;
+    cursor: pointer;
+    color: var(--secondary-color2);
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    background: none;
+    border: none;
+
+}
+
+
+
+
+.active {
+    color: var(--primary-color2);
+}
+
+/* .hr {
+    display: none;
+} */
+
+
+/* End of Navigation Bar */
+
+/* header styling */
+.header {
+    color: var(--primary-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    width: 93vw;
+    height: 15vh;
+    margin-bottom: 15rem;
+
+
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: white;
+
+
+}
+
+.header h1 span {
+    color: var(--secondary-color2)
+}
+
+.header p {
+    font-size: 1.6rem;
+    color: var(--text-color2);
+    text-align: center;
+
+
+}
+
+
+
+/* header end */
+
+/* Home section styling */
+#home {
+    height: 60vh;
+    width: 100%;
+    display: block;
+
+
+}
+
+.main {
+    display: flex;
+    color: white;
+
+}
+
+.image-container {
+    display: block;
+
+}
+
+.image-container img {
+    max-width: 30rem;
+    border: 0.4rem solid white;
+    border-radius: 1rem;
+    margin-right: 5.4rem;
+
+}
+
+.image-container img:hover {
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 0.81;
+}
+
+.main-content h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.main-content span {
+    color: var(--secondary-color2);
+}
+
+.main-content p {
+    letter-spacing: 0.06rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+/* Social Links */
+.social-links {
+    letter-spacing: 0.06rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+
+.social-links a {
+    color: #b2f9e0;
+    text-decoration: none;
+    margin-right: 3rem;
+
+}
+
+.fa-brands {
+    display: inline-block;
+    font-size: 3rem;
+
+
+}
+
+/* Responsive:: with a screen width up to 991px */
+
+@media (max-width: 991px) {
+    .navig {
+        width: 90%;
+        margin: auto;
+        border-bottom: 1px solid var(--secondary-color2);
+        margin-bottom: 30px;
+
+    }
+
+    .navbar {
+        padding: 0;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .nav-list {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 1rem 3rem;
+        height: 100%;
+        background-color: var(--primary-color1);
+        overflow: hidden;
+        z-index: 1;
+        width: 100vw;
+        transition: .3s ease-in-out;
+
+    }
+    .nav-list li{
+        margin-top: 5rem;
+        padding: 0;
+
+    }
+    .nav-list li a{
+        margin-top: 5rem;
+        padding: 0;
+        font-size: 2.6rem;
+
+    }
+
+    .nav-list li:first-of-type{
+        margin-top: 15rem;
+    }
+
+    .nav-list .btn-cross{
+        line-height: 6;
+    }
+    .nav-list .btn-cross i{
+        font-size: 5rem;
+    }
+
+    .header {
+        margin-bottom: 25px;
+        height: auto;
+    }
+
+    #home {
+        display: block;
+    }
+
+    .main {
+        display: block;
+        text-align: center;
+    }
+
+    .image-container {
+        /* margin: auto; */
+        margin-bottom: 25px;
+        margin-left: 2rem;
+       
+    }
+
+    .main-content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .social-links {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+
+
+}
+
+
+
+/* Responsive: with a screen width between 992px and 1199px */
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .head-paragraph{
+        max-width: 45rem;
+         
+     }
+}
+
+
+
+/* Responsive : with screen width  above 1200px */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .head-paragraph{
+        max-width: 80rem;
+         
+     }
+}
+
+
+/* styles to apply when the max width of device is 600px */
+@media (max-width:600px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* styles to apply when the max width of device is 500px */
+@media (max-width:500px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+/* styles to apply when the max width of device is 400px */
+@media (max-width:500px) {
+
+    html {
+        font-size: 45%;
+    }
+
+}
+
+/* styles to apply when the max width of device is 300px */
+@media (max-width:300px) {
+
+    html {
+        font-size: 35%;
+    }
+
+}

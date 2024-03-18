@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+/* Custom properties/variables*/
+:root {
+    --primary-color1: #635985;
+    --primary-color2: #ACFADF;
+    --secondary-color1: #94ADD7;
+    --secondary-color2: #E8FFCE;
+    --text-color: rgb(126 34 206);
+    --text-color2: #02febfb6;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    text-decoration: none;
+
+}
+
+#contact {
+    margin-top: 8%;
+}
+
+/* contact section */
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 45%;
+}
+
+.content-col {
+    margin-right: 11rem;
+    line-height: 3;
+}
+
+.content-col h2 {
+    font-size: 3rem;
+    color: var(--secondary-color2);
+
+}
+
+
+.content-col p {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+
+.mail a {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.mail a i {
+    margin-right: 1rem;
+}
+
+.media {
+    line-height: 3.5;
+}
+
+.contact-social-links a {
+    margin-right: 4rem !important;
+    color: #b2f9e0;
+    text-decoration: none;
+}
+
+.contact-social-links a:first-of-type {
+    margin-right: 0 !important;
+}
+
+/* Form-col */
+
+
+label {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+.form-col h2 {
+    font-size: 2.5rem;
+    line-height: 3;
+    font-weight: 300;
+    color: var(--secondary-color2)
+}
+
+input,
+textarea {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color2);
+    width: 100%;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.right {
+    margin-right: 1.6rem;
+}
+
+.error{
+    font-size: 1.5rem;
+    color: var(--secondary-color2);
+    font-weight: 200;
+}
+
+.submit-form {
+    text-align: right;
+    margin: 3rem 0;
+}
+
+.submit-form button {
+    background-color: var(--secondary-color2);
+    padding: 1rem 4.2rem;
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    letter-spacing: .2px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+/* Responsive:: with a screen width upto 549px */
+@media(max-width: 549px){
+    #contact{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15% !important;
+    }
+    .lets-talk p{
+       text-align: justify !important;
+    }
+
+    .submit-form{
+        text-align: center;
+    }
+   .cols{
+    display: block;
+   }
+   .col{
+    flex: none;
+   }
+   .contact-social-links{
+    margin-bottom: 0 !important;
+    display: inline-block;
+   }
+   
+   .contact-social-links a i {
+    font-size: 4rem !important;
+   }
+}
+
+/* Responsive:: with a screen width between 550px and 679px  */
+@media(min-width: 550px) and (max-width: 679px){
+    #contact{
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .lets-talk p{
+        text-align: justify !important;
+    }
+
+    .submit-form{
+        text-align: center;
+    }
+   .cols{
+    display: block;
+   }
+   .col{
+    flex: none;
+   }
+   .contact-social-links{
+    margin-bottom: 0 !important;
+    display: inline-block;
+   }
+   
+   .contact-social-links a i {
+    font-size: 4rem !important;
+   }
+}
+
+/* Responsive:: with a screen width between 680px and 850px */
+@media(min-width: 680px) and (max-width: 850px){
+    #contact{
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lets-talk p{
+        text-align: justify !important;
+    }
+
+    .submit-form{
+        text-align: center;
+    }
+   .cols{
+    display: block;
+   }
+   .col{
+    flex: none;
+   }
+   .contact-social-links{
+    margin-bottom: 0 !important;
+    display: inline-block;
+   }
+   
+   .contact-social-links a i {
+    font-size: 4rem !important;
+   }
+}
+
+/* Responsive:: with a screen width between 851px and 991px */
+@media(min-width: 851px) and (max-width:991px){
+    #contact {
+        max-width: 750px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .lets-talk p{
+        text-align: justify !important;
+    }
+    .submit-form{
+        text-align: center;
+    }
+   .cols{
+    display: block;
+   }
+   .col{
+    flex: none;
+   }
+   .contact-social-links{
+    margin-bottom: 0 !important;
+    display: inline-block;
+    
+   }
+   .contact-social-links a i {
+    font-size: 4rem !important;
+   }
+}
+
+/* Responsive: with a screen width between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px){
+    
+    .lets-talk p{
+        text-align: justify !important;
+    }
+    .submit-form{
+        text-align: center;
+    }
+
+    
+
+    
+}
+
+ /* styles to apply when the max width of device is 600px */
+@media (max-width:600px) {
+    html {
+        font-size: 60% !important;
+    }
+    #contact{
+        max-width: 550px !important;
+        margin-left: 5rem !important;
+        margin-right: auto !important;
+    }
+
+    input,
+textarea {
+   
+    width: 90%;
+   
+
+}
+.right{
+    margin-right: 0;
+}
+}
+
+/* styles to apply when the max width of device is 500px */
+@media (max-width:500px) {
+
+    html {
+        font-size: 55%;
+    }
+    #contact{
+        max-width: 420px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 10% !important;
+    }
+
+}
+
+/* styles to apply when the max width of device is 457px */
+@media (max-width:457px) {
+
+    html {
+        font-size: 45% !important;
+    }
+    
+    #contact{
+        max-width: 550px !important;
+        margin-left: 3rem !important;
+        margin-right: auto !important;
+        margin-top: 13% !important;
+    }
+    .lets-talk p{
+        text-align: justify !important;
+    }
+
+}
+
+/* styles to apply when the max width of device is 300px */
+@media (max-width:300px) {
+
+    html {
+        font-size: 40% !important;
+    }
+
+    #contact{
+        max-width: 250px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+
+}
+/* styles to apply when the max width of device is 280px */
+@media (max-width:280px) {
+
+    html {
+        font-size: 30% !important;
+    }
+
+    #contact{
+        max-width: 250px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+
+}
